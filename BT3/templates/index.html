@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block main_content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Hệ thống Quản lý Nhà hàng</h1>
+    <p class="lead">Chọn một chức năng từ menu để bắt đầu</p>
+    <hr class="my-4">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Quản lý Menu</h5>
+                    <p class="card-text">Thêm, xóa và quản lý các món ăn</p>
+                    <a href="/menu" class="btn btn-primary">Đi tới Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-receipt fa-3x mb-3 text-success"></i>
+                    <h5 class="card-title">Quản lý Đơn hàng</h5>
+                    <p class="card-text">Tạo và quản lý đơn hàng</p>
+                    <a href="/orders" class="btn btn-success">Đi tới Đơn hàng</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-chair fa-3x mb-3 text-warning"></i>
+                    <h5 class="card-title">Quản lý Bàn</h5>
+                    <p class="card-text">Xem và quản lý trạng thái bàn</p>
+                    <a href="/tables" class="btn btn-warning">Đi tới Bàn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
